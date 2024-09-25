@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <section class="py-4 w-full  relative bg-[url(./assets/bg-1.png)] bg-cover">
+        <div class="bg bg-black opacity-50 inset-0 absolute"></div>
+        <nav class="flex relative w-full p-3 justify-between h-[150px] bg-transparent fixed top-0 z-50">
+            <div class="flex justify-start ">
+                <img class="h-16" src="./assets/logo 1.png" alt="">
+                <!-- Hamburger Icon for small screens -->
+                <div class="md:hidden my-4 mx-3">
+                    <button id="menu-btn" class="text-yellow-200 font-thin focus:outline-none">
+                        <!-- Hamburger Icon -->
+                        <i class="bi bi-list text-xl"></i> Menu
+                    </button>
+                </div>
+            </div>
+        
+            <!-- Links for larger screens -->
+            <div class="links cursor-pointer  text-lg hidden md:flex justify-center text-center px-6 py-3 text-white font-thin">
+                <a href="/#menu" class="mx-3 hover:text-yellow-600">Menu</a>
+                <a href="/#special" class="mx-3 hover:text-yellow-600">Today's Special</a>
+                <a href="/#about" class="mx-3 hover:text-yellow-600">About</a>
+                <a href="/#contact" class="mx-3 hover:text-yellow-600">Contact</a>
+            
+            </div>
+        
+            <!-- Reservation Button -->
+            <button class="hover:translate-y-2 bg-transparent border-2 px-2 max-h-[50px] border-yellow-600 text-yellow-600 flex text-center items-center justify-center shadow-lg shadow-yellow-500">
+                <span>RESERVATION -------</span>
+            </button>
+        
+            <!-- Links for small screens, hidden by default -->
+            <div id="mobile-menu" class="absolute top-[80px] left-0 w-full bg-gray-800 text-white hidden flex flex-wrap items-center md:hidden">
+                <a href="/#menu" class="py-2 w-full text-center hover:bg-yellow-600">Menu</a>
+                <a href="/#special" class="py-2 w-full text-center hover:bg-yellow-600">Today's Special</a>
+                <a href="/#about" class="py-2 w-full text-center hover:bg-yellow-600">About</a>
+                <a href="/#contact" class="py-2 w-full text-center hover:bg-yellow-600">Contact</a>
+             
+            </div>
+        </nav>
+        
+        <div  class="md:w-1/3 mx-auto cursor-default relative">
+            <div data-aos="fade-up" class=" flex justify-center flex-wrap">
+                <h2  class=" font-great-vibes text-white text-2xl">Best &nbsp; Sushi &nbsp; In &nbsp; Town</h2>
+                <h1 class="text-center font-cinzel text-yellow-200 text-5xl">Taste the rich flavor of high quality sushi</h1>
+                <p class="text-center  text-white py-4 mt-3 font-thin">We only use the five star quality for our menu, come and get the richness in every food we serve.</p>
+                <button class="font-cinzel p-2  text-gray-800 bg-yellow-600">GO TO MENU ----</button>
+
+            </div>
+
+        </div>
+    </section>
+    <section id="special" class="second w-full p-8 mb-0">
+      <div class="w-full cursor-default">
+          <h2 class="font-great-vibes md:w-1/3 mx-auto text-center text-white text-xl">Special &nbsp; Menu</h2>
+          <h1 class="font-cinzel md:w-1/3 mx-auto text-center text-yellow-200 mt-3 text-3xl">Today's Special</h2>
+          <p class="md:w-1/3 mx-auto text-center text-white mt-4 font-thin">Special menu oftenly comes different everyday, this is our special food for today</p>
+        </div>
+        <div class="grid md:grid-cols-3 grid-cols-1 span-0 md:w-[80%] mx-auto mt-5">
+            <div class="card card-color-1">
+                <img src="./assets/sushi1.png" class="w-full h-1/2" alt="">
+                <div class="flex flex-wrap justify-start p-8">
+                    <h4 class="text-2xl text-yellow-200 font-cinzel w-full my-3">Tuna Sushi</h4>
+                    <p class="text-white font-thin w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis magnam ipsa id maxime deleniti laudantium earum.</p>
+                    <div class="stars w-full flex my-4">
+                        <img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt="">
+                    
+                    </div>
+                    <button class="text-yellow-600 border-2 border-yellow-500 bg-transparent font-cinzel p-1 shadow-lg shadow-yellow-600">Order Now ----</button>
+                </div>
+            </div>
+            <div class="card card-color-2">
+                <img src="./assets/sushi3.png" class="w-full h-1/2" alt="">
+                <div class="flex flex-wrap justify-start p-8">
+                    <h4 class="text-2xl text-yellow-200 font-cinzel w-full my-3">Salmon Sushi</h4>
+                    <p class="text-white font-thin w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis magnam ipsa id maxime deleniti laudantium earum.</p>
+                    <div class="stars w-full flex my-4">
+                        <img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt="">
+                    
+                    </div>
+                    <button class="text-yellow-600 border-2 border-yellow-500 bg-transparent font-cinzel p-1 shadow-lg shadow-yellow-600">Order Now ----</button>
+                </div>
+            </div>
+            <div class="card card-color-1">
+                <img src="./assets/sushi6.png" class="w-full h-1/2" alt="">
+                <div class="flex flex-wrap justify-start p-8">
+                    <h4 class="text-2xl text-yellow-200 font-cinzel w-full my-3">Just Sushi</h4>
+                    <p class="text-white font-thin w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis officiis magnam ipsa id maxime deleniti laudantium earum.</p>
+                    <div class="stars w-full flex my-4">
+                        <img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt=""><img class="w-[20px] h-[20px]" src="./assets/Star.png" alt="">
+                    
+                    </div>
+                    <button class="text-yellow-600 border-2 border-yellow-500 bg-transparent font-cinzel p-1 shadow-lg shadow-yellow-600">Order Now ----</button>
+                </div>
+            </div>
+            
+          
+        </div>
+    </section>
+    <section class="card-color-2 w-full py-6 mt-0">
+        <div class="divider-img w-full mb-6">
+            <img src="./assets/bg-2.png" class="w-full h-auto" alt="">
+        </div>
+    </section>
+    <section id="menu" class="second w-full p-8 mb-0">
+        <div data-aos="fade-up" class="w-full">
+            <h2 class="font-great-vibes md:w-1/3 mx-auto text-center text-white text-xl">Quality food for you</h2>
+            <h1 class="font-cinzel md:w-1/3 mx-auto text-center text-yellow-200 mt-3 text-3xl">Our Specialities</h2>
+            <p class="md:w-1/3 mx-auto text-center text-white mt-4 font-thin">Authentic food from our restaurant served with high quality ingredients</p>
+          </div>
+          <div class="buttons md:w-[60%] space-y-2 mx-auto flex flex-wrap justify-center py-4 my-4">
+            <button class="bg-yellow-200  text-gray-800 p-2 font-thin mx-2">Specialities</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">Steak</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">Homestyle Sushi</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">With Rice</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">Cocktails</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">Wine</button>
+            <button class="bg-transparent border-2 border-white text-white p-2 font-thin mx-2">Appetizer</button>
+
+
+
+        </div>
+          </section>
+          <section class="card-color-2 menu w-full">
+            <div class="card flex md:w-[80%] mx-auto">
+                <img src="./assets/sushi10.png" class="w-[60%]" alt="">
+                <div data-aos="fade-left" class="text w-[40%] md:p-6 p-3 flex flex-wrap bg-transparent items-center justify-start">
+                    <h2 class="md:text-3xl text-2xl my-2 w-full text-yellow-200 font-cinzel">Dragon Sushi</h2>
+                    <p class="md:w-[80%] text-left font-thin md:text-lg text-sm line-clamp-3 text-white">Ingredients: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus. Donec vitae vulputate nunc, in laoreet urna.</p>
+                    <h4 class="md:text-3xl w-full font-cinzel text-yellow-200 mt-5">$50</h4>
+                </div>
+            </div>
+            <div  class="card flex md:w-[80%] mx-auto">
+                <div class="text w-[40%] md:p-6 p-3 flex flex-wrap bg-transparent items-center justify-start">
+                    <h2 class="md:text-3xl text-2xl my-2 w-full text-yellow-200 font-cinzel">Creamy Sushi</h2>
+                    <p class="md:w-[80%] text-left font-thin  md:text-lg line-clamp-3 text-sm text-white">Ingredients: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus. Donec vitae vulputate nunc, in laoreet urna.</p>
+                    <h4 class="md:text-3xl w-full font-cinzel text-yellow-200 mt-5">$55</h4>
+                </div>
+                <img data-aos="fade-right" src="./assets/sushi12.png" class="w-[60%]" alt="">
+
+            </div>
+            <div  class="card flex md:w-[80%] mx-auto">
+                <img src="./assets/sushi11.png" class="w-[60%]" alt="">
+                <div data-aos="fade-left" class="text w-[40%] md:p-6 p-3 flex flex-wrap bg-transparent items-center justify-start">
+                    <h2 class="md:text-3xl text-2xl  my-2 w-full text-yellow-200 font-cinzel">Roll Salmon Sushi</h2>
+                    <p class="md:w-[80%] text-left font-thin line-clamp-3 md:text-lg text-sm text-white">Ingredients: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus. Donec vitae vulputate nunc, in laoreet urna.</p>
+                    <h4 class="md:text-3xl w-full font-cinzel text-yellow-200 mt-5">$60</h4>
+                </div>
+            </div>
+          </section>
+          <section class="card-color-2 w-full py-6 mt-0">
+            <div class="divider-img w-full mb-6">
+                <img src="./assets/salmon 1.png" class="w-full h-auto" alt="">
+            </div>
+        </section>
+        <section id="about" class="second w-full md:p-8 p-4 mb-0">
+            <div data-aos="fade-up" class="w-full">
+                <h2 class="font-great-vibes md:w-1/3 mx-auto text-center text-white text-xl">About &nbsp; Us</h2>
+                <h1 class="font-cinzel md:w-1/3 mx-auto text-center text-yellow-200 mt-3 text-3xl">Our Story</h2>
+                <p class="md:w-1/3 mx-auto text-center text-white mt-4 font-thin">A journey for making successful luxury restaurant with the best services</p>
+              </div>
+              <div data-aos="fade-right" class="flex flex-wrap w-full md:p-6 p-3">
+                  <div class="img-grid grid grid-cols-2 gap-0">
+                    <!-- Prva kolona sa jednom slikom -->
+                    <div class="first">
+                      <img src="./assets/chef3.png" alt="Chef 3" class="w-full h-auto">
+                    </div>
+                  
+                    <!-- Druga kolona sa dve slike postavljene vertikalno -->
+                    <div class="second grid grid-rows-2 gap-0">
+                      <img src="./assets/chef1.png" alt="Chef 1" class="w-full h-auto">
+                      <img src="./assets/chef2.png" alt="Chef 2" class="w-full h-auto">
+                    </div>
+                  </div>
+                  <div class="text items-center p-3 md:w-[40%] flex flex-wrap">
+                     <div>
+                         <p data-aos="fade-left" class="w-full text-white font-thin mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat urna id leo euismod rhoncus. Aliquam erat volutpat. Nulla id aliquam neque, at dignissim quam. Praesent et lacus accumsan, consequat nisl a, mattis sapien. Nam sodales ullamcorper aliquet. Phasellus ut pretium libero, vitae imperdiet purus. Sed sed tincidunt velit. Aliquam vitae ipsum molestie, vehicula nisi quis, finibus leo.
+                         </p>
+                         <button class="mx-2 my-3 text-yellow-600 border-2 border-yellow-500 bg-transparent font-cinzel p-1 shadow-lg px-2 shadow-yellow-600">More About Us ----</button>
+                     </div>
+
+                    </div>
+              </div>
+              </section>
+              <footer id="contact" class="bg-black cursor-default relative text-white py-8 px-4 md:px-8 bg-[url(./assets/footerbg.png)] bg-cover">
+                <div class="bg bg-black opacity-70 inset-0 absolute"></div>
+
+                <div class="max-w-6xl relative mx-auto">
+                  <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl  font-cinzel text-yellow-200 mb-4">WE READY TO HAVE YOU</h2>
+                    <h3 class="text-xl md:text-3xl  font-cinzel text-yellow-200 mb-6">THE BEST DINING EXPERIENCES</h3>
+                    <div class="flex flex-col font-thin md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-4">
+                      <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        Jendral Sudirman Street Pahoman Bandar
+                      </p>
+                      <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        Call us: +0721 471 285
+                      </p>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button data-aos="fade-up" class="bg-transparent text-black font-cinzel py-2 px-6 border-2 border-yellow-600 text-yellow-200 shadow-lg shadow-yellow-600 hover:bg-yellow-500 transition duration-300">
+                      Reserve a Table ----
+                    </button>
+                  </div>
+                  <div class="mt-8 text-center">
+                    <!-- Placeholder for logo -->
+                    <div class="w-16 h-16 bg-transparent rounded-full mx-auto mb-4">
+                        <img src="./assets/logo 1.png" alt="">
+                    </div>
+                    <div class="flex justify-center space-x-4 font-cinzel">
+                      <a href="#" class="text-yellow-200 hover:text-yellow-500 underline underline-offset-4">Instagram</a>
+                      <a href="#" class="text-yellow-200 hover:text-yellow-500">Twitter</a>
+                      <a href="#" class="text-yellow-200 hover:text-yellow-500">Facebook</a>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            
+</body>
+</html>
+<script>
+    AOS.init({
+  duration: 1200,  // globalno trajanje animacije (u ms)
+  offset: 200,     // udaljenost pre nego što počne animacija
+  delay: 100,        // globalno kašnjenje (u ms)
+  easing: 'ease-in-out', // globalna animacija
+});
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+<style>
+    html {
+  scroll-behavior: smooth;
+}
+    .font-great-vibes {
+      font-family: 'Great Vibes', cursive;
+    }
+    .font-cinzel {
+      font-family: 'Cinzel', cursive;
+    }
+    .second{
+        background-color: #1E1E1E;
+    }
+    .card-color-1{
+        background-color: #2E2E2E;
+    }
+    .card-color-2{
+        background-color: #1E1E1E;
+    }
+  </style>
